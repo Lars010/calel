@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 const SimpleProgrammingStyled = styled.div`
-
+& {
+    margin-block-start: 8rem;
+}
 `
 
 function SimpleProgramming() {

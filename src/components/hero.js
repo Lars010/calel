@@ -15,11 +15,12 @@ const HeroStyled = styled.div`
     max-inline-size: 43.12rem;
     block-size: 32.12rem;
     border: 1px solid red;
-    margin-block-start: 4rem;
+    margin-block-start: 8rem;
 }
 
 .hero-description h1 {
     font: var(--desktop-h1);
+    margin-block-start: 0;
 }
 
 .hero-description span {
@@ -33,7 +34,7 @@ const HeroStyled = styled.div`
 }
 
 .register {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     position: relative;
 }
@@ -66,7 +67,7 @@ const HeroStyled = styled.div`
     cursor: pointer;
 
 .imagen-1 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-block-start: 8rem;
 }
     
