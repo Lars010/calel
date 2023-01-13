@@ -6,7 +6,7 @@ const HeaderStyled = styled.div`
     display: flex;
     align-items: center;
     block-size: 6rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .nav {

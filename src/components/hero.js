@@ -14,7 +14,7 @@ const HeroStyled = styled.div`
     inline-size: 100%;
     max-inline-size: 43.12rem;
     block-size: 32.12rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-block-start: 8rem;
 }
 
