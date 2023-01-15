@@ -31,6 +31,7 @@ const SeeCalelStyled = styled.div`
     max-inline-size: 24rem;
     block-size: 11.5rem;
     display: flex;
+    margin-block-end: 8rem;
   }
 
   .beneficios h5 {
