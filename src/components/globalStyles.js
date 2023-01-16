@@ -48,8 +48,6 @@ body {
     padding-inline: 1.12rem;
 }
 
-}
-
 `
 
 
