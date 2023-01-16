@@ -48,14 +48,16 @@ const BitlyStyled = styled.div`
   @media screen and (max-width: 414px) {
 
     .bitly-wrapper {
-      display: grid;
-      flex-direction: column;
-      place-items: center;
+      display: block;
+      text-align: center;
       block-size: 67.18rem;
     }
     .bitly-wrapper img {
       inline-size: 20.5rem;
       block-size: 20.5rem;
+    }
+    .bitly-description {
+      margin-inline: 0;
     }
     .bitly-description h4 {
       font: var(--mobile-h4);
