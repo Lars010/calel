@@ -58,6 +58,47 @@ const EnjoyMoreStyled = styled.div`
     margin: 0;
     letter-spacing: -0.002em;
   }
+
+  @media screen and (max-width: 414px) {
+    .enjoy-title {
+      block-size: 31.68rem;
+      margin-block-end: 0;
+    }
+    .enjoy-title h1 {
+      font: var(--mobile-h2);
+    }
+    .enjoy-title p {
+      font: var(--mobile-h4regular);
+    }
+    .enjoy-wrapper {
+      block-size: 31.68rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-areas: "image" "auto-reminder";
+    }
+
+    .image {
+      grid-area: image;
+    }
+
+    .enjoy-wrapper2 {
+      display: block;
+      block-size: 54.2rem;
+      margin-block-end: 4rem;
+    }
+    .enjoy-wrapper2 img {
+      inline-size: 20.5rem;
+      block-size: 20.3rem;
+    }
+    .auto-reminder {
+      text-align: center;
+      block-size: 32.25rem;
+      margin-block-end: 1.5rem;
+      grid-area: auto-reminder;
+    }
+  }
 `;
 
 function EnjoyMore() {
@@ -73,19 +114,26 @@ function EnjoyMore() {
           </p>
         </div>
       </div>
-      <div className="enjoy-wrapper2">
-        <div className="auto-reminder">
-          <span>GESTIÓN DE FLUJOS DE TRABAJO</span>
-          <h3>Automatice recordatorios y seguimientos</h3>
-          <p>
-            Calel automatiza sus reuniones con flujos de trabajo y envía desde
-            correos electrónicos de recordatorio hasta notas de agradecimiento,
-            para que pueda centrarse en el trabajo que solo usted puede
-            realizar. Es como tener un asistente, incluso si tiene un negocio
-            unipersonal.
-          </p>
+      <div className="grid">
+        <div className="enjoy-wrapper2">
+          <div className="auto-reminder">
+            <span>GESTIÓN DE FLUJOS DE TRABAJO</span>
+            <h3>Automatice recordatorios y seguimientos</h3>
+            <p>
+              Calel automatiza sus reuniones con flujos de trabajo y envía desde
+              correos electrónicos de recordatorio hasta notas de
+              agradecimiento, para que pueda centrarse en el trabajo que solo
+              usted puede realizar. Es como tener un asistente, incluso si tiene
+              un negocio unipersonal.
+            </p>
+          </div>
+          <img
+            className="image"
+            src="../images/recordatorio.png"
+            alt="recordatorio"
+            title="Automatice recordatorios"
+          ></img>
         </div>
-        <img src="../images/recordatorio.png" alt="recordatorio" title="Automatice recordatorios" ></img>
       </div>
     </EnjoyMoreStyled>
   );

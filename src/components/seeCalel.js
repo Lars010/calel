@@ -66,6 +66,31 @@ const SeeCalelStyled = styled.div`
     max-inline-size: 21rem;
     block-size: 11.5rem;
   }
+
+  @media screen and (max-width: 414px) {
+.calel-title span {
+  font: var(--desktop-body3-semibold);
+}
+.calel-title p {
+  font: var(--mobile-h2);
+}
+.calel-title img {
+  inline-size: 20.5rem;
+  block-size: 20.68rem;
+}
+.servicios {
+  flex-wrap: wrap;
+}
+.beneficios {
+  margin-block-end: 1.4rem;
+}
+.detalles h5 {
+  font: var(--mobile-h5black);
+}
+.detalles p {
+  font: var(--desktop-body1-regular);
+}
+  }
 `;
 
 function SeeCalel() {

@@ -7,6 +7,9 @@ import SetMeetings from "./components/setMeetings";
 import EnjoyMore from "./components/enjoyMore";
 import OnDemandCode from "./components/onDemandCode";
 import CutFocus from "./components/cutFocus";
+import Bitly from "./components/bitly";
+import TryCalel from "./components/tryCalel";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
       <EnjoyMore />
       <OnDemandCode />
       <CutFocus />
+      <Bitly />
+      <TryCalel />
+      <Footer />
       </Layout>
     
   );

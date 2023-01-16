@@ -24,21 +24,13 @@ const SetMeetingsStyled = styled.div`
     font: var(--desktop-h5-medium);
   }
 
-  .meeting-images {
-    display: flex;
-    gap: 8rem;
-    margin-inline-start: 7.37rem;
-  }
-
-  .meeting-images img {
-    margin-block-end: 2.5rem;
-  }
-
   .wrapper-description {
     display: flex;
     gap: 1.5rem;
+    block-size: 35.87rem;
     margin-block-start: 2.5rem;
     margin-block-end: 2.5rem;
+    /* border: 1px solid blue; */
   }
 
   .meeting-description {
@@ -46,6 +38,14 @@ const SetMeetingsStyled = styled.div`
     inline-size: 100%;
     max-inline-size: 36.75rem;
     block-size: 9.25rem;
+  }
+
+  .meeting-description .i-1 {
+    margin-block-end: 3.5rem;
+  }
+
+  .meeting-description .i-2 {
+    margin-block-end: 6.56rem;
   }
 
   .meeting-description h5 {
@@ -70,6 +70,48 @@ const SetMeetingsStyled = styled.div`
     border-radius: 40px;
     font: var(--desktop-buttons);
     border: 1px solid #000000;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 414px) {
+  .easy-meeting-title h1 {
+    font: var(--mobile-h3);
+  }
+  .easy-meeting-title p {
+    font: var(--mobile-h4regular);
+  }
+  .wrapper-description {
+    display: block;
+    block-size: 64.5rem;
+    text-align: center;
+  }
+  .d-1 {
+   block-size: 32.56rem;
+   margin-block-end: 2.5rem;
+  }
+  .d-1 .i-1 {
+    margin-block-end: 2.5rem;
+  }
+  .d-2 {
+    block-size: 29.43rem;
+  }
+  .d-2 .i-2 {
+    margin-block-end: 2.5rem;
+  }
+  .i-1 {
+    inline-size: 20.5rem;
+    block-size: 18.37rem;
+  }
+  .i-2 {
+    
+   inline-size: 20.5rem;
+   block-size: 13.43rem;
+  }
+  .use-calel button {
+  inline-size: 20.5rem;
+  block-size: 3rem;
+  background: var(--white);
+  }
   }
 `;
 
@@ -87,20 +129,13 @@ function SetMeetings() {
           </p>
         </div>
       </div>
-      <div className="meeting-images">
-        <img
+      <div className="wrapper-description">
+        <div className="meeting-description d-1">
+        <img className="i-1"
           src="../images/meeting.png"
           alt="meeting"
           title="Meetings in your way"
         ></img>
-        <img
-          src="../images/calel-meeting.png"
-          alt="calel-setup"
-          title="Calel Power"
-        ></img>
-      </div>
-      <div className="wrapper-description">
-        <div className="meeting-description">
           <h5>Reúnase de la forma que desee</h5>
           <p>
             Muestre disponibilidad en su horario solo los días y las horas que
@@ -108,7 +143,12 @@ function SetMeetings() {
             se confirmará al instante
           </p>
         </div>
-        <div className="meeting-description">
+        <div className="meeting-description d-2">
+        <img className="i-2"
+          src="../images/calel-meeting.png"
+          alt="calel-setup"
+          title="Calel Power"
+        ></img>
           <h5>Calel lo coordina todo</h5>
           <p>
             Las reuniones se programan sin conflictos de calendario, los

@@ -39,6 +39,17 @@ body {
     justify-content: center;
 }
 
+@media screen and (max-width: 414px) {
+    display: grid;
+    place-items: center;
+    inline-size: 100%;
+    max-inline-size: 24.37rem;
+    block-size: 1fr;
+    padding-inline: 1.12rem;
+}
+
+}
+
 `
 
 
