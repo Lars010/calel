@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 
 const HeaderStyled = styled.div`
@@ -10,12 +10,12 @@ const HeaderStyled = styled.div`
     /* border: 1px solid red; */
 }
 
-.nav {
+.navegacion {
     display: flex;
     gap: 1rem;
     margin-inline-start: 9.29rem;
 }
-.nav a {
+.navegacion a {
     font: var(--desktop-body2-bold);
     text-decoration: none;
 }
@@ -48,6 +48,9 @@ const HeaderStyled = styled.div`
     justify-content: space-around;
     inline-size: 100%;
     max-inline-size: 24.37rem;
+}
+.navegacion {
+    display: none;
 }
 .nav {
         display: block;
@@ -82,10 +85,18 @@ function Header() {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
+
     return (
 
         <HeaderStyled>
             <img src='../images/calendly.png' alt='logo' title='Logo Calel'></img>
+            <div className='navegacion'>
+            <a href='#'>Particulares</a>
+                <a href='#'>Equipos</a>
+                <a href='#'>Producto</a>
+                <a href='#'>Precios</a>
+                <a href='#'>Recursos</a>
+            </div>
             <div className='nav' style={{ display: menuOpen ? 'block' : 'none' }}>
                 <a href='#'>Particulares</a>
                 <a href='#'>Equipos</a>
