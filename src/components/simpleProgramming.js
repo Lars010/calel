@@ -53,6 +53,7 @@ const SimpleProgrammingStyled = styled.div`
   }
 .marcas {
 flex-wrap: wrap;
+justify-content: center;
 }
 .compass {
   inline-size: 7.28rem;

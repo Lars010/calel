@@ -87,6 +87,7 @@ const EnjoyMoreStyled = styled.div`
       display: block;
       block-size: 54.2rem;
       margin-block-end: 4rem;
+      text-align: center;
     }
     .enjoy-wrapper2 img {
       inline-size: 20.5rem;
