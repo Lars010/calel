@@ -58,7 +58,6 @@ const FooterStyled = styled.div`
   }
 
   @media screen and (max-width: 414px) {
-
     .content {
       display: grid;
       flex-direction: column;
@@ -73,8 +72,25 @@ const FooterStyled = styled.div`
     }
   }
 
-  @media (min-width:768px) and (max-width: 1440px){
+  @media (min-width: 425px) and (max-width: 767px) {
+    .content {
+      display: grid;
+      flex-direction: column;
+      place-items: center;
+    }
+    .content img {
+      margin-block-end: 1.5rem;
+    }
+    .footer-details {
+      display: grid;
+      flex-direction: column;
+    }
+    .footer-wrapper {
+      block-size: 100%;
+    }
+  }
 
+  @media (min-width: 768px) and (max-width: 1440px) {
     .content {
       display: grid;
       flex-direction: column;

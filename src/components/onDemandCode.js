@@ -57,7 +57,6 @@ const OnDemandCodeStyled = styled.div`
   }
 
   @media (max-width: 414px) {
-
     .programming-ondemand {
       display: block;
       block-size: 47.17rem;
@@ -85,8 +84,32 @@ const OnDemandCodeStyled = styled.div`
     }
   }
 
-  @media (min-width:768px) and (max-width: 1440px){
+  @media (min-width: 425px) and (max-width: 767px) {
+    .programming-ondemand {
+      display: block;
+      block-size: 47.17rem;
+      margin-block-start: 4rem;
+      margin-block-end: 0;
+      text-align: center;
+    }
 
+    .programming-ondemand img {
+      inline-size: 20.5rem;
+      block-size: 14.35rem;
+    }
+    .more-conections {
+      block-size: 27.31rem;
+      text-align: center;
+      margin-block-start: 1.5rem;
+    }
+    .more-conections p {
+      font: var(--mobile-body1regular);
+      letter-spacing: -0.002em;
+      align-self: stretch;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1440px) {
     .programming-ondemand {
       display: block;
       block-size: 47.17rem;

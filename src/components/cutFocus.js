@@ -19,7 +19,7 @@ const CutFocusStyled = styled.div`
 
   .focus span {
     font: var(--desktop-body3-semibold);
-    opacity: .4;
+    opacity: 0.4;
   }
 
   .focus h1 {
@@ -38,7 +38,6 @@ const CutFocusStyled = styled.div`
   }
 
   @media screen and (max-width: 414px) {
-
     .wrapper-focus {
       display: block;
       block-size: 57.75rem;
@@ -64,8 +63,31 @@ const CutFocusStyled = styled.div`
     }
   }
 
-  @media (min-width:768px) and (max-width: 1440px){
+  @media (min-width: 425px) and (max-width: 767px) {
+    .wrapper-focus {
+      display: block;
+      block-size: 57.75rem;
+      text-align: center;
+      margin-block-start: 5rem;
+    }
+    .focus {
+      text-align: center;
+      block-size: 21.43rem;
+      margin-block-start: 0;
+      margin-inline: 0;
+    }
+    .wrapper-focus img {
+      inline-size: 20.5rem;
+      block-size: 23.81rem;
+      margin-block-start: 4.5rem;
+    }
+    .focus p {
+      font: var(--mobile-body1regular);
+      line-height: 29px;
+    }
+  }
 
+  @media (min-width: 768px) and (max-width: 1440px) {
     .wrapper-focus {
       display: block;
       block-size: 57.75rem;

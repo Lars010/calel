@@ -101,15 +101,49 @@ const EnjoyMoreStyled = styled.div`
     }
   }
 
-  @media (min-width:768px) and (max-width: 1440px) {
+  @media (min-width: 425px) and (max-width: 767px) {
+    .enjoy-title {
+      block-size: 31.68rem;
+      margin-block-end: 0;
+    }
+    .enjoy-title h1 {
+      font: var(--mobile-h2);
+    }
+    .grid {
+      display: grid;
+      grid-template-areas: "image" "auto-reminder";
+    }
 
+    .image {
+      grid-area: image;
+    }
+
+    .enjoy-wrapper2 {
+      display: block;
+      block-size: 54.2rem;
+      margin-block-end: 4rem;
+      text-align: center;
+    }
+    .enjoy-wrapper2 img {
+      inline-size: 20.5rem;
+      block-size: 20.3rem;
+    }
+    .auto-reminder {
+      text-align: center;
+      block-size: 32.25rem;
+      margin-block-end: 1.5rem;
+      grid-area: auto-reminder;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1440px) {
     .enjoy-wrapper2 {
       display: block;
       block-size: 54.2rem;
       margin-block-end: 7rem;
       text-align: center;
       margin-inline: 0;
-    }    
+    }
     .auto-reminder {
       inline-size: 40rem;
       /* border: 1px solid red; */

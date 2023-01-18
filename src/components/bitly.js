@@ -30,7 +30,7 @@ const BitlyStyled = styled.div`
 
   .bitly-description span {
     font: var(--desktop-body3-semibold);
-    opacity: .4;
+    opacity: 0.4;
   }
 
   .bitly-description h4 {
@@ -46,7 +46,6 @@ const BitlyStyled = styled.div`
   }
 
   @media screen and (max-width: 414px) {
-
     .bitly-wrapper {
       display: block;
       text-align: center;
@@ -68,18 +67,40 @@ const BitlyStyled = styled.div`
     }
   }
 
-  @media (min-width:768px) and (max-width: 1440px) {
-
+  @media (min-width: 425px) and (max-width: 767px) {
     .bitly-wrapper {
       display: block;
       text-align: center;
       block-size: 67.18rem;
-    }    
+      margin-block-start: 5rem;
+    }
+    .bitly-wrapper img {
+      inline-size: 20.5rem;
+      block-size: 20.5rem;
+    }
+    .bitly-description {
+      margin-inline: 0;
+    }
+    .bitly-description h4 {
+      font: var(--mobile-h4);
+    }
+    .bitly-description img {
+      inline-size: 10.83rem;
+      block-size: 10.83rem;
+      margin-block-start: 2rem;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1440px) {
+    .bitly-wrapper {
+      display: block;
+      text-align: center;
+      block-size: 67.18rem;
+    }
     .bitly-description {
       margin-inline-start: 2rem;
     }
   }
-
 `;
 
 function Bitly() {
@@ -95,7 +116,11 @@ function Bitly() {
             que estos clientes potenciales asisten más a las reuniones.
           </h4>
           <p>Dave Rotholz</p>
-          <img src="../images/imagen-bitly.png" alt="bitly-imagen" title="icono de bitly"></img>
+          <img
+            src="../images/imagen-bitly.png"
+            alt="bitly-imagen"
+            title="icono de bitly"
+          ></img>
         </div>
       </div>
     </BitlyStyled>

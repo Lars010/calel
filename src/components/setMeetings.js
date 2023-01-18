@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const SetMeetingsStyled = styled.div`
-
   .title-wrap {
     display: flex;
     justify-content: center;
@@ -55,7 +54,7 @@ const SetMeetingsStyled = styled.div`
 
   .meeting-description p {
     font: var(--desktop-body1-regular);
-    margin-block-start: .5rem;
+    margin-block-start: 0.5rem;
   }
 
   .use-calel {
@@ -74,70 +73,102 @@ const SetMeetingsStyled = styled.div`
   }
 
   @media screen and (max-width: 414px) {
-  .easy-meeting-title h1 {
-    font: var(--mobile-h3);
-  }
-  .easy-meeting-title p {
-    font: var(--mobile-h4regular);
-  }
-  .wrapper-description {
-    display: block;
-    block-size: 64.5rem;
-    text-align: center;
-  }
-  .d-1 {
-   block-size: 32.56rem;
-   margin-block-end: 2.5rem;
-  }
-  .d-1 .i-1 {
-    margin-block-end: 2.5rem;
-  }
-  .d-2 {
-    block-size: 29.43rem;
-  }
-  .d-2 .i-2 {
-    margin-block-end: 2.5rem;
-  }
-  .i-1 {
-    inline-size: 20.5rem;
-    block-size: 18.37rem;
-  }
-  .i-2 {
-    
-   inline-size: 20.5rem;
-   block-size: 13.43rem;
-  }
-  .use-calel button {
-  inline-size: 20.5rem;
-  block-size: 3rem;
-  background: var(--white);
-  }
-  }
-
-  @media (min-width:768px) and (max-width: 1440px){
-
+    .easy-meeting-title h1 {
+      font: var(--mobile-h3);
+    }
+    .easy-meeting-title p {
+      font: var(--mobile-h4regular);
+    }
     .wrapper-description {
-    display: block;
-    block-size: 85rem;
-    text-align: center;
-    /* border: 1px solid blue; */
-  }
-  .d-1 {
-   block-size: 39.56rem;
-   margin-block-start: 2.5rem;
-   margin-block-end: 2.5rem;
-   margin-inline-start: 4rem;
-  }
-  .d-2 {
-    block-size: 42rem;
-    margin-inline-start: 4rem;
-  }
-  .use-calel button {
-  inline-size: 20.5rem;
-  block-size: 3rem;
-  background: var(--white);
+      display: block;
+      block-size: 64.5rem;
+      text-align: center;
+    }
+    .d-1 {
+      block-size: 32.56rem;
+      margin-block-end: 2.5rem;
+    }
+    .d-1 .i-1 {
+      margin-block-end: 2.5rem;
+    }
+    .d-2 {
+      block-size: 29.43rem;
+    }
+    .d-2 .i-2 {
+      margin-block-end: 2.5rem;
+    }
+    .i-1 {
+      inline-size: 20.5rem;
+      block-size: 18.37rem;
+    }
+    .i-2 {
+      inline-size: 20.5rem;
+      block-size: 13.43rem;
+    }
+    .use-calel button {
+      inline-size: 20.5rem;
+      block-size: 3rem;
+      background: var(--white);
+    }
   }
 
+  @media (min-width: 425px) and (max-width: 767px) {
+    .wrapper-description {
+      display: block;
+      block-size: 70.5rem;
+      text-align: center;
+    }
+    .d-1 {
+      block-size: 32.56rem;
+      margin-block-start: 15rem;
+      margin-block-end: 2.5rem;
+    }
+    .d-1 .i-1 {
+      margin-block-end: 2.5rem;
+    }
+    .d-2 {
+      block-size: 29.43rem;
+    }
+    .d-2 .i-2 {
+      margin-block-end: 2.5rem;
+    }
+    .i-1 {
+      inline-size: 20.5rem;
+      block-size: 18.37rem;
+    }
+    .i-2 {
+      inline-size: 20.5rem;
+      block-size: 13.43rem;
+    }
+    .use-calel button {
+      inline-size: 20.5rem;
+      block-size: 3rem;
+      background: var(--white);
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1440px) {
+    .wrapper-description {
+      display: block;
+      block-size: 85rem;
+      text-align: center;
+      /* border: 1px solid blue; */
+    }
+    .d-1 {
+      block-size: 39.56rem;
+      margin-block-start: 2.5rem;
+      margin-block-end: 2.5rem;
+      margin-inline-start: 4rem;
+    }
+    .d-2 {
+      block-size: 42rem;
+      margin-inline-start: 4rem;
+    }
+    .use-calel button {
+      inline-size: 20.5rem;
+      block-size: 3rem;
+      background: var(--white);
+    }
   }
 `;
 
@@ -157,11 +188,12 @@ function SetMeetings() {
       </div>
       <div className="wrapper-description">
         <div className="meeting-description d-1">
-        <img className="i-1"
-          src="../images/meeting.png"
-          alt="meeting"
-          title="Meetings in your way"
-        ></img>
+          <img
+            className="i-1"
+            src="../images/meeting.png"
+            alt="meeting"
+            title="Meetings in your way"
+          ></img>
           <h5>Reúnase de la forma que desee</h5>
           <p>
             Muestre disponibilidad en su horario solo los días y las horas que
@@ -170,11 +202,12 @@ function SetMeetings() {
           </p>
         </div>
         <div className="meeting-description d-2">
-        <img className="i-2"
-          src="../images/calel-meeting.png"
-          alt="calel-setup"
-          title="Calel Power"
-        ></img>
+          <img
+            className="i-2"
+            src="../images/calel-meeting.png"
+            alt="calel-setup"
+            title="Calel Power"
+          ></img>
           <h5>Calel lo coordina todo</h5>
           <p>
             Las reuniones se programan sin conflictos de calendario, los

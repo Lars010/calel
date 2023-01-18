@@ -17,6 +17,19 @@ block-size: 1fr;
 padding-inline: 1rem;
 }
 
+@media (min-width:425px) and (max-width: 767px){
+
+    display: grid;
+    grid-template-columns: 425px;
+    inline-size: 100%;
+    max-inline-size: 26.56rem;
+    min-block-size: 100%;
+    /* border: 4px solid red; */
+    /* padding-inline: 1.5rem; */
+    justify-content: center;
+    margin: 0;
+}
+
 @media (min-width:768px) and (max-width: 1440px){
 
     display: grid;
