@@ -62,7 +62,16 @@ const CutFocusStyled = styled.div`
       block-size: 23.81rem;
       margin-block-start: 1.5rem;
     }
+  }
 
+  @media (min-width:768px) and (max-width: 1440px){
+
+    .wrapper-focus {
+      display: block;
+      block-size: 57.75rem;
+      text-align: center;
+      margin-block-start: 7rem;
+    }
   }
 `;
 

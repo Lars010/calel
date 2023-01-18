@@ -81,6 +81,15 @@ justify-content: center;
 }
 
   }
+
+@media (min-width:768px) and (max-width: 1440px){
+
+  .marcas {
+flex-wrap: wrap;
+justify-content: center;
+}
+
+}
 `;
 
 function SimpleProgramming() {

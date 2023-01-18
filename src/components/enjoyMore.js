@@ -100,6 +100,25 @@ const EnjoyMoreStyled = styled.div`
       grid-area: auto-reminder;
     }
   }
+
+  @media (min-width:768px) and (max-width: 1440px) {
+
+    .enjoy-wrapper2 {
+      display: block;
+      block-size: 54.2rem;
+      margin-block-end: 7rem;
+      text-align: center;
+      margin-inline: 0;
+    }    
+    .auto-reminder {
+      inline-size: 40rem;
+      /* border: 1px solid red; */
+      margin-inline-start: 5rem;
+    }
+    .image {
+      margin-block-start: 3rem;
+    }
+  }
 `;
 
 function EnjoyMore() {

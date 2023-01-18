@@ -104,6 +104,20 @@ const HeroStyled = styled.div`
 }
 }
 
+@media (min-width:768px) and (max-width: 1440px){
+
+  & {
+  display: grid;
+  flex-direction: column;
+  grid-template-areas: "imagen" "hero" "button";
+  margin-inline-start: 3rem;
+}
+  .imagen-1 {
+    margin-inline-start: 5rem;
+  }
+
+}
+
 
 `
 

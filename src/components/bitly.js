@@ -66,7 +66,18 @@ const BitlyStyled = styled.div`
       inline-size: 10.83rem;
       block-size: 10.83rem;
     }
+  }
 
+  @media (min-width:768px) and (max-width: 1440px) {
+
+    .bitly-wrapper {
+      display: block;
+      text-align: center;
+      block-size: 67.18rem;
+    }    
+    .bitly-description {
+      margin-inline-start: 2rem;
+    }
   }
 
 `;

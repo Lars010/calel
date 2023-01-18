@@ -71,7 +71,25 @@ const FooterStyled = styled.div`
       display: grid;
       flex-direction: column;
     }
+  }
 
+  @media (min-width:768px) and (max-width: 1440px){
+
+    .content {
+      display: grid;
+      flex-direction: column;
+      place-items: center;
+    }
+    .content img {
+      margin-block-end: 1.5rem;
+    }
+    .footer-details {
+      display: grid;
+      flex-direction: column;
+    }
+    .footer-wrapper {
+      block-size: 100%;
+    }
   }
 `;
 

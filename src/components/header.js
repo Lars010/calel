@@ -22,6 +22,7 @@ const HeaderStyled = styled.div`
 .login {
     margin-inline-start: 5.82rem;
     font: var(--desktop-buttons);
+    cursor: pointer;
 }
 .boton {
     margin-inline-start: 2rem;
@@ -34,6 +35,7 @@ const HeaderStyled = styled.div`
     border-radius: 40px;
     border: none;
     font: var(--desktop-buttons);
+    cursor: pointer;
 }
 
 .hamburger {
@@ -48,6 +50,7 @@ const HeaderStyled = styled.div`
     justify-content: space-around;
     inline-size: 100%;
     max-inline-size: 24.37rem;
+    /* border: 1px solid red; */
 }
 .navegacion {
     display: none;
@@ -70,6 +73,10 @@ const HeaderStyled = styled.div`
     .login {
         display: none;
     }
+    .boton {
+        display: flex;
+        /* border: 1px solid red; */
+    }
     .hamburger {
         /* position: absolute; */
         top: 20px;
@@ -78,6 +85,44 @@ const HeaderStyled = styled.div`
         display: block;
         cursor: pointer;
     }
+}
+
+@media (min-width:768px) and (max-width: 1440px){
+
+    & {
+    display: flex;
+    justify-content: space-around;
+    inline-size: 100%;
+    max-inline-size: 48rem;
+}
+.navegacion {
+    display: none;
+}
+.nav {
+        display: block;
+        /* border: 1px solid red; */
+        position: fixed;
+        top: 100px;
+        left: 0px;
+        padding-inline-start: 20px;
+        width: 390px;
+        height: 100%;
+        background: #fff;
+        display: none;
+    }
+    .nav a {
+        display: block;
+    }
+    
+    .hamburger {
+        /* position: absolute; */
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+        display: block;
+        cursor: pointer;
+    }
+
 }
 `
 

@@ -56,7 +56,15 @@ const TryCalelStyled = styled.div`
   .try-calel span {
     font: var(--mobile-body1medium);
   }
+}
 
+@media (min-width:768px) and (max-width: 1440px){
+
+  .try-calel-wrapper {
+    display: block;
+    block-size: 48.05rem;
+    text-align: center;
+  }
 }
 `;
 

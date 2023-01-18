@@ -37,6 +37,7 @@ const GlobalStyles = createGlobalStyle`
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 @media screen and (max-width: 414px) {

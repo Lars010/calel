@@ -113,6 +113,32 @@ const SetMeetingsStyled = styled.div`
   background: var(--white);
   }
   }
+
+  @media (min-width:768px) and (max-width: 1440px){
+
+    .wrapper-description {
+    display: block;
+    block-size: 85rem;
+    text-align: center;
+    /* border: 1px solid blue; */
+  }
+  .d-1 {
+   block-size: 39.56rem;
+   margin-block-start: 2.5rem;
+   margin-block-end: 2.5rem;
+   margin-inline-start: 4rem;
+  }
+  .d-2 {
+    block-size: 42rem;
+    margin-inline-start: 4rem;
+  }
+  .use-calel button {
+  inline-size: 20.5rem;
+  block-size: 3rem;
+  background: var(--white);
+  }
+
+  }
 `;
 
 function SetMeetings() {
