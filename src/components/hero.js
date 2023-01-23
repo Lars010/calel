@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const HeroStyled = styled.div`
   & {
@@ -150,7 +151,7 @@ function Hero() {
             name="email"
             placeholder="Ingrese su email"
           />
-          <button>Registrese</button>
+          <Link to='/signup'><button>Registrese</button></Link>
         </div>
       </div>
       <div className="imagen-1">

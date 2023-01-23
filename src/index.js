@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import GlobalStyles from './components/globalStyles';
 import Prices from './components/prices';
 import Payment from './components/payment';
+import SignUp from './components/signUp';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: '/payment',
     element: <Payment />
+  },
+  {
+    path: '/signup',
+    element: <SignUp />
   }
 ])
 

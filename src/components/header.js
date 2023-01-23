@@ -200,10 +200,10 @@ function Header() {
         <a href="#">Recursos</a>
       </div>
       <div className="login">
-        <span>Iniciar sesion</span>
+      <Link to='/signup'><span>Iniciar sesion</span></Link>
       </div>
       <div className="boton">
-        <button>Registrese</button>
+      <Link to='/signup'><button>Registrese</button></Link>
       </div>
       <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <img src="../images/menu.png" alt="menu" title="menu"></img>
