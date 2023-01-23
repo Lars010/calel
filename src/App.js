@@ -11,9 +11,13 @@ import Bitly from "./components/bitly";
 import TryCalel from "./components/tryCalel";
 import Footer from "./components/footer";
 
+
+
+
 function App() {
   return (
     
+      
       <Layout>
       <Header />
       <Hero />
@@ -26,8 +30,7 @@ function App() {
       <Bitly />
       <TryCalel />
       <Footer />
-      </Layout>
-    
+      </Layout> 
   );
 }
 

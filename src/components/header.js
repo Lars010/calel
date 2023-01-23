@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import { useState, useEffect, useRef } from "react";
+import Prices from "./prices";
+import { Link } from "react-router-dom";
+
+
 
 const HeaderStyled = styled.div`
   & {
@@ -172,6 +176,8 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    
+    
     <HeaderStyled>
       <img
         className="calel-logo"
@@ -183,14 +189,14 @@ function Header() {
         <a href="#">Particulares</a>
         <a href="#">Equipos</a>
         <a href="#">Producto</a>
-        <a href="#">Precios</a>
+        <Link to='/prices'>Precios</Link>
         <a href="#">Recursos</a>
       </div>
       <div className="nav" style={{ display: menuOpen ? "block" : "none" }}>
         <a href="#">Particulares</a>
         <a href="#">Equipos</a>
         <a href="#">Producto</a>
-        <a href="#">Precios</a>
+        <Link to='/prices'>Precios</Link>
         <a href="#">Recursos</a>
       </div>
       <div className="login">
@@ -203,6 +209,7 @@ function Header() {
         <img src="../images/menu.png" alt="menu" title="menu"></img>
       </button>
     </HeaderStyled>
+    
   );
 }
 

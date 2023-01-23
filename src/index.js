@@ -4,13 +4,32 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import GlobalStyles from './components/globalStyles';
+import Prices from './components/prices';
+import Payment from './components/payment';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />
+  },
+  {
+    path: '/prices',
+    element: <Prices />
+  },
+  {
+    path: '/payment',
+    element: <Payment />
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <>
     <GlobalStyles />
-    <App />
+    <RouterProvider router={router} />
     </>
   </React.StrictMode>
 );

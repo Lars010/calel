@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+
 const LayoutStyled = styled.div`
 
 inline-size: 100%;
