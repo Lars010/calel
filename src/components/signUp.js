@@ -121,6 +121,20 @@ const SignUpStyled = styled.div`
   #chk:checked ~ .signup label {
     transform: scale(0.6);
   }
+
+  @media screen and (max-width: 414px) {
+
+    & {
+      block-size: 1fr;
+    }
+    .titulo {
+      margin-block-start: 0;
+    }
+
+    .contenedor {
+      block-size: 34.37rem;
+    }
+  }
 `;
 
 function SignUp() {

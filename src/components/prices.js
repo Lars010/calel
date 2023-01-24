@@ -267,7 +267,7 @@ button {
     display: inline-block;
     inline-size: 100%;           /*Al poner el inline-size a un 100* se mostrara el contenido completo hasta el max inline size  */
     max-inline-size: 22.5rem;
-    block-size: 100vh;
+    block-size: 45.37rem;
     justify-content: center;
   }
 
@@ -295,6 +295,9 @@ button {
   .plan-3 {
     grid-area: plan-3;
     margin-inline: 2.12rem;
+    margin-block-start: 2rem;
+    margin-block-end: 5rem;
+    box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
   }
 
   .plan-1 {
@@ -324,7 +327,6 @@ button {
 function Prices() {
     return (
         <PricesStyled>
-            
             <div className="layout">
             <div className="titulo">
       <h1>Planes y precios</h1>

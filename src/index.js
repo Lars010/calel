@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import GlobalStyles from './components/globalStyles';
-import Prices from './components/prices';
 import Payment from './components/payment';
 import SignUp from './components/signUp';
+import PricesPage from './components/pricesPage';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/prices',
-    element: <Prices />
+    element: <PricesPage />
   },
   {
     path: '/payment',
